@@ -14,21 +14,21 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/" tabindex="-1">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="location" role="application"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select tabindex="1" id="neighborhoods-select" name="neighborhoods" aria-label="Select Neighborhood" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option tabindex="0" value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select tabindex="2" id="cuisines-select" name="cuisines" aria-label="Select Cusisine" onchange="updateRestaurants()">
           <option tabindex="1" value="all">All Cuisines</option>
         </select>
       </div>
@@ -40,7 +40,7 @@
   <!--import/register service worker-->
   <script src="js/sw_registration.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=XXXX&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script>
 
 
   <footer id="footer">
