@@ -1,0 +1,25 @@
+/*for restaurant.html*/
+
+/*TABLET*/
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .inside header, .inside #footer, .inside #map-container, #restaurant-container, #reviews-container {
+        width: 100%;
+    }
+    
+    .inside #map-container {
+        height: 200px;
+        top: 130px;
+        position: relative;
+    }
+
+    .inside #reviews-container {
+        padding: 30px 0;
+    }
+}
+
+/*PHONE*/
+@media screen and (max-width: 472px) {
+    .inside nav h1 a {
+        font-size: 0.6em;
+    }
+}

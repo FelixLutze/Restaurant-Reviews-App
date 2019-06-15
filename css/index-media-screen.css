@@ -1,0 +1,38 @@
+/*for index.html*/
+
+/*TABLET*/
+@media screen and (max-width: 460px) {
+    #restaurants-list {
+        padding: 0;
+      }
+
+    #restaurants-list li {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        border-top: 2px solid #ccc;
+      }
+
+    #restaurants-list li a {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/*PHONE*/
+@media screen and (min-width: 461px) and (max-width: 764px) {
+    #restaurants-list {
+        padding: 0;
+      }
+
+    #restaurants-list li {
+        width: 60%;
+        margin: 20px;
+      }
+}
+
+@media screen and (max-width: 472px) {
+  nav h1 a {
+      font-size: 0.6em;
+  }
+}
